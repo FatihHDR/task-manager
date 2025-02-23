@@ -21,7 +21,7 @@ class Module2KegiatanFactory extends Factory
             'status' => $this->faker->randomElement(['pending', 'completed']),
             'priority' => $this->faker->numberBetween(1, 5),
             'course' => $this->faker->word,
-            'notes' => $this->极faker->paragraph,
+            'notes' => $this->faker->paragraph,
             'completed_date' => $this->faker->optional()->dateTimeBetween('now', '+1 month'),
         ];
     }
